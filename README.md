@@ -28,3 +28,34 @@ Fungsi untuk merubah number pada koding diatas berubah karena adanya fungsi setS
 - Membuat button plus dan button minus untuk increment dan decrement
 - Membuat suatu kondisi jika counter nya itu ganjil atau genap, lalu membedakan hasil warnanya. 
 - Membuat bonus, apabila counter 
+
+# Tugas 8
+## Perbedaan Navigator.push dan Navigator.pushReplacement.
+- Navigator.push = berpindah halaman dan dapat kembali ke halaman sebelumnya
+- Navigator.pushReplacement = berpindah halaman namun tidak dapat kembali ke halaman sebelumnya
+
+## Widget apa saja yang dipakai
+- Padding : memberikan jarak dalam komponennya
+- Text : untuk menambahkan kata/kalimat
+- Column : membuat widget sehingga bisa dalam bentuk vertikal
+- Center : untuk membuat widget tersebut berada di tengah
+- Container : untuk menampung yang di dalamnya widget-widget
+- ListTile : membentuk sebuah list dan terdapat juga widget widget didalamnya.
+- Drawer : untuk membuat drawer yang isinya adalah navigasi aplikasi
+
+## Jenis-jenis event yang ada pada Flutter
+- onTap : listener ketika user menekan widget satu kali
+- onDoubleTap: listener ketika user menekan widget dua kali
+- onLongPress: listener ketika user menekan dan menahan widget beberapa detik.
+- onSaved: event yang terjadi ketika widget disimpan
+
+## Cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+Navigator mempunyai 2 API, yaitu declarative dan imperative.
+- Imperative bisa diibaratkan saat kita memberi arah secara lengkap kepada supir taksi untuk menuju ke tempat yang kita tuju. Seperti dari Kantor A, kemudian lurus, belok kanan, lalu belok kiri, dan berhenti pas di depan minimarket. Informasi yang diberikan sangat lengkap sehingga si supir taksi tadi mendapatkan arahan yang jelas ke tempat tujuan.
+- Declarative bisa diibaratkan saat kita hanya memberikan alamat yang akan kita tuju kepada supir taksi secara gamblang. Semisal “langsung berangkat ke minimarket A ya pak!”.
+
+## Implementasi checklist
+- buat navigasi dalam bentuk drawer, yang isinya ada 3 bagian yaitu counter_7, tambah budget, dan data budget
+- Membuat halaman form yang isinya adalah untuk input budget, yaitu judul, nominal, tanggal, dan jenis
+- Membuat jelas budget di file terpisah, yang gunanya untukmembuat objek budget setiap input data dan memasukkan nya ke dalam list
+- Membuat halaman untuk data budget yang dibuat dalam file dart terpisah
