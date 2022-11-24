@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:diah/form.dart';
+import 'package:diah/page/form.dart';
 import 'package:diah/main.dart';
-import 'package:diah/budget.dart';
-import 'package:diah/dataBudget.dart';
+import 'package:diah/model/budget.dart';
+import 'package:diah/page/dataBudget.dart';
+import 'package:diah/page/mywatchlist_list.dart';
 
 class MyDrawer extends StatefulWidget {
   var theBudget;
@@ -49,6 +50,16 @@ class _MyDrawerState extends State<MyDrawer> {
                     builder: (context) => DataBudget(
                           myBudget: widget.theBudget,
                         )),
+              );
+            },
+          ),
+          ListTile(
+            title: const Text('My Watch List'),
+            onTap: () {
+              // Route menu ke halaman form
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => MyWatchListPage()),
               );
             },
           ),

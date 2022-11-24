@@ -1,8 +1,8 @@
-import 'package:diah/drawer.dart';
+import 'package:diah/page/drawer.dart';
 import 'package:flutter/material.dart';
-import 'package:diah/form.dart';
+import 'package:diah/page/form.dart';
 import 'package:diah/main.dart';
-import 'package:diah/budget.dart';
+import 'package:diah/model/budget.dart';
 
 class DataBudget extends StatefulWidget {
   var myBudget;

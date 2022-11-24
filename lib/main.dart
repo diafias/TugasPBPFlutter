@@ -1,6 +1,6 @@
-import 'package:diah/form.dart';
+import 'package:diah/page/form.dart';
 import 'package:flutter/material.dart';
-import 'package:diah/drawer.dart';
+import 'package:diah/page/drawer.dart';
 
 void main() {
   runApp(const MyApp());
