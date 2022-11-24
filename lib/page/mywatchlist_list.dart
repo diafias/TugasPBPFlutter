@@ -24,10 +24,8 @@ class _MyWatchListPage extends State<MyWatchListPage> {
       },
     );
 
-    // melakukan decode response menjadi bentuk json
     var data = jsonDecode(utf8.decode(response.bodyBytes));
 
-    // melakukan konversi data json menjadi object ToDo
     List<MyWatchList> dataWatchList = [];
     for (var d in data) {
       if (d != null) {
@@ -54,10 +52,10 @@ class _MyWatchListPage extends State<MyWatchListPage> {
                 return Column(
                   children: const [
                     Text(
-                      "Kamu belum punya watchlist :(",
-                      style: TextStyle(color: Color(0xff59A5D8), fontSize: 20),
+                      "watchlist belum ada:(",
+                      style: TextStyle(fontSize: 20),
                     ),
-                    SizedBox(height: 8),
+                    SizedBox(height: 7),
                   ],
                 );
               } else {

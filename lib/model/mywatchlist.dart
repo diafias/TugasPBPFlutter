@@ -3,6 +3,7 @@
 //     final toDo = toDoFromJson(jsonString);
 
 import 'dart:convert';
+import 'dart:ffi';
 
 List<MyWatchList> myWatchListFromJson(String str) => List<MyWatchList>.from(
     json.decode(str).map((x) => MyWatchList.fromJson(x)));
@@ -21,7 +22,7 @@ class MyWatchList {
 
   bool watched;
   String tittle;
-  String rating;
+  Int rating;
   DateTime releaseDate;
   String review;
 

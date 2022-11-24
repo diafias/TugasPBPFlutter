@@ -59,3 +59,22 @@ Navigator mempunyai 2 API, yaitu declarative dan imperative.
 - Membuat halaman form yang isinya adalah untuk input budget, yaitu judul, nominal, tanggal, dan jenis
 - Membuat jelas budget di file terpisah, yang gunanya untukmembuat objek budget setiap input data dan memasukkan nya ke dalam list
 - Membuat halaman untuk data budget yang dibuat dalam file dart terpisah
+
+# Tugas 9
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Bisa, namun data yang akan didapatkan akan tidak sesuai dengan yang diinginkan. Maka dari itu, harus ditentukan dulu modelnya bagaiamana agar data yang dibuat itu mempunyai struktur yang rapi
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+- FutureBuilder : membuat widget tersendiri berdasarkan interaksi dengan sebuah class Future
+- ListTile : untuk membuat teks dengan atribut leading dan trailing
+- Dan widget widget yang sama dengan tugas sebelumnya
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+- Fungsi yang return class Future ini akan lakukan fetch data JSON secara async
+- Widget ini akan menampilkan data yang telah di fetch. Widget tersebut akan menampilkan widget lainnya sesuai dengan kondisi future yang ada, yakni snapshot.hasData saat future berisi data, snapshot.hasError saat future mendapati error, dan snapshot.data == null saat future tidak berisi data apapun (disini dimanfaatkan untuk menunjukkan bahwa data sedang di-fetch / masih loading).
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+- Membuat tombol navigasi
+- Membuat halaman MyWatchList berisi semua watch list yang ada pada endpoint JSON di Django yang telah dideploy ke Heroku
+- Membuat nav dari setiap judul ke hal detail
+- Buat halaman detail, yang menampilkan judul, date, rating, review

@@ -21,7 +21,7 @@ class _MyDrawerState extends State<MyDrawer> {
         children: [
           // Menambahkan clickable menu
           ListTile(
-            title: const Text('counter_7r'),
+            title: const Text('counter_7'),
             onTap: () {
               // Route menu ke halaman utama
               Navigator.pushReplacement(
